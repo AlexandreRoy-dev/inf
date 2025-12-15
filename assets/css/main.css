@@ -4464,3 +4464,50 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.hero-image-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* ajuste l’opacité au besoin */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+.header .logo img {
+  height: 60px !important;
+  max-height: none !important;
+  width: auto;
+}
+.service-sidebar .service-info-card .info-item{
+  display: grid !important;
+  grid-template-columns: 170px 1fr !important;
+  column-gap: 14px !important;
+  align-items: start !important;
+}
+
+.service-sidebar .service-info-card .info-label{
+  display: block !important;
+  margin: 0 !important;
+  white-space: normal !important;
+}
+
+.service-sidebar .service-info-card .info-value{
+  display: block !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
