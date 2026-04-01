@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Formulaire d’embauche | INF inc.</title>
+  <meta name="description" content="Candidature et formulaire d’embauche chez INF inc. — démolition, décontamination et ignifugation.">
+  <meta name="keywords" content="emploi, recrutement, INF inc., formulaire, candidature, Québec">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .recruit-form .form-label .req { color: var(--accent-color, #c45c26); }
+    .recruit-form .yesno-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .recruit-form .yesno-row .label-text { min-width: 200px; flex: 1; }
+    .recruit-form .yesno-group { display: flex; gap: 1rem; align-items: center; }
+    .recruit-form .section-label { font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+    .recruit-form .hint { font-size: 0.9rem; color: #666; margin-top: 0.5rem; }
+    .recruit-form .employeur-row .form-control { margin-bottom: 0.5rem; }
+  </style>
+</head>
+
+<body class="recrutement-page">
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <img src="assets/img/logo.png" alt="INF inc.">
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#about">À propos</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="team.html">Équipe</a></li>
+        <li><a href="recrutement.html" class="active">Recrutement</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <a class="btn-getstarted d-none d-sm-block" href="index.html#contact">
+      Nous contacter
+    </a>
+
+  </div>
+</header>
+
+<main class="main">
+
+  <div class="page-title dark-background" data-aos="fade"
+       style="background-image: url(assets/img/construction/showcase-4.webp);">
+    <div class="container position-relative">
+      <h1>Formulaire d’embauche</h1>
+      <p>Envoyez votre candidature — nous traitons chaque demande avec attention.</p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="index.html">Accueil</a></li>
+          <li class="current">Recrutement</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <section class="section bg-light py-5">
+    <div class="container" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
+          <div class="card shadow-sm border-0 p-4 p-md-5">
+           
+
+            <form action="https://formspree.io/f/mdapeqlj" method="POST" class="recruit-form">
+              <input type="hidden" name="_subject" value="Formulaire d’embauche — INF inc.">
+              <input type="hidden" name="_next" id="formspree-next" value="">
+              <script>
+                (function () {
+                  var el = document.getElementById('formspree-next');
+                  if (el) el.value = new URL('merci.html', window.location.href).href;
+                })();
+              </script>
+
+              <div class="mb-3">
+                <label class="form-label" for="nom">Nom <span class="req">*</span></label>
+                <input type="text" class="form-control" id="nom" name="nom" required autocomplete="name">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="telephone">Numéro de téléphone <span class="req">*</span></label>
+                <input type="tel" class="form-control" id="telephone" name="telephone" required autocomplete="tel">
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label" for="email">Courriel <span class="req">*</span></label>
+                <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
+              </div>
+
+              <p class="section-label">Cocher <strong>OUI</strong> ou <strong>NON</strong> :</p>
+
+              <div class="yesno-row">
+                <span class="label-text">Carte CCQ</span>
+                <div class="yesno-group">
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="carte_ccq" value="Oui" required> Oui</label>
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="carte_ccq" value="Non"> Non</label>
+                </div>
+              </div>
+              <div class="yesno-row">
+                <span class="label-text">Carte ASP construction</span>
+                <div class="yesno-group">
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="carte_asp_construction" value="Oui" required> Oui</label>
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="carte_asp_construction" value="Non"> Non</label>
+                </div>
+              </div>
+              <div class="yesno-row">
+                <span class="label-text">Simdut 2015</span>
+                <div class="yesno-group">
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="simdut_2015" value="Oui" required> Oui</label>
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="simdut_2015" value="Non"> Non</label>
+                </div>
+              </div>
+              <div class="yesno-row">
+                <span class="label-text">Carte amiante</span>
+                <div class="yesno-group">
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="carte_amiante" value="Oui" required> Oui</label>
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="carte_amiante" value="Non"> Non</label>
+                </div>
+              </div>
+              <div class="yesno-row">
+                <span class="label-text">Carte plomb</span>
+                <div class="yesno-group">
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="carte_plomb" value="Oui" required> Oui</label>
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="carte_plomb" value="Non"> Non</label>
+                </div>
+              </div>
+              <div class="yesno-row">
+                <span class="label-text">Carte moisissures</span>
+                <div class="yesno-group">
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="carte_moisissures" value="Oui" required> Oui</label>
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="carte_moisissures" value="Non"> Non</label>
+                </div>
+              </div>
+
+              <div class="mb-2 mt-3">
+                <label class="form-label">Autres formations</label>
+                <input type="text" class="form-control mb-2" name="autres_formations_ligne1" placeholder="" autocomplete="off">
+                <input type="text" class="form-control" name="autres_formations_ligne2" placeholder="" autocomplete="off">
+              </div>
+
+              <div class="yesno-row mt-3">
+                <span class="label-text">Permis de conduire valide <span class="req">*</span></span>
+                <div class="yesno-group">
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="permis_conduire" value="Oui" required> Oui</label>
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="permis_conduire" value="Non"> Non</label>
+                </div>
+              </div>
+              <div class="yesno-row">
+                <span class="label-text">Véhicule fonctionnel <span class="req">*</span></span>
+                <div class="yesno-group">
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="vehicule_fonctionnel" value="Oui" required> Oui</label>
+                  <label class="form-check form-check-inline mb-0"><input class="form-check-input" type="radio" name="vehicule_fonctionnel" value="Non"> Non</label>
+                </div>
+              </div>
+
+              <div class="mb-3 mt-3">
+                <label class="form-label" for="restrictions_physiques">Restrictions physiques</label>
+                <textarea class="form-control" id="restrictions_physiques" name="restrictions_physiques" rows="3" placeholder=""></textarea>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label" for="ville_residence">Ville de résidence <span class="req">*</span></label>
+                <input type="text" class="form-control" id="ville_residence" name="ville_residence" required autocomplete="address-level2">
+              </div>
+
+              <p class="section-label">2 derniers employeurs (nom et numéro de téléphone) <span class="req">*</span></p>
+              <div class="row employeur-row g-2 mb-2">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="employeur_1_nom" placeholder="Nom — employeur 1" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" class="form-control" name="employeur_1_telephone" placeholder="Téléphone — employeur 1" required>
+                </div>
+              </div>
+              <div class="row employeur-row g-2 mb-4">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="employeur_2_nom" placeholder="Nom — employeur 2" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" class="form-control" name="employeur_2_telephone" placeholder="Téléphone — employeur 2" required>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label" for="refere_par">Référé par (le cas échéant)</label>
+                <input type="text" class="form-control" id="refere_par" name="refere_par" autocomplete="off">
+              </div>
+
+              <p class="small text-muted mb-4"><span class="req">*</span> obligatoire</p>
+
+              <button type="submit" class="btn btn-primary btn-lg px-5">Envoyer le formulaire</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="footer" class="footer dark-background">
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="./assets/img/logo.png" alt="">
+        </a>
+        <div class="footer-contact pt-3">
+          <p>Grand Montréal • Rive-Sud • Laval • Rive-Nord</p>
+          <p>Secteurs résidentiel, commercial et industriel</p>
+          <p class="mt-3"><strong>Sherbrooke :</strong> <span>(819) 822-1260</span></p>
+          <p class="mt-3"><strong>Montréal :</strong> <span>(514) 775-3150</span></p>
+        </div>
+        <div class="social-links d-flex mt-4">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#about">À propos</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="recrutement.html">Recrutement</a></li>
+          <li><a href="privacy.html">Politique de confidentialité</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Nos services</h4>
+        <ul>
+          <li><a href="demolition.html">Démolition</a></li>
+          <li><a href="decontamination.html">Décontamination</a></li>
+          <li><a href="ignifugation.html">Ignifugation</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© 2026 <strong class="px-1 sitename">INF Inc.</strong> Tous droits réservés — Conception web par <a href="https://roymarketing.ca/">Roy Marketing</a></p>
+  </div>
+</footer>
+
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
